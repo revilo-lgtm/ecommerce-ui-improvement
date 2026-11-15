@@ -19,6 +19,9 @@ Dự án này cải tiến giao diện thẻ sản phẩm (product card) của w
 
 - **Tên website:** Shopee Việt Nam
 - **URL:** https://shopee.vn
+- **Nhóm sản phẩm kinh doanh:** Đa ngành hàng — thời trang, điện tử, mỹ phẩm, thực phẩm, đồ gia dụng và hàng nghìn danh mục khác
+- **Khách hàng mục tiêu:** Người tiêu dùng Việt Nam từ 18–45 tuổi, mua sắm online qua điện thoại và máy tính; ưu tiên giá tốt, giao hàng nhanh và khuyến mãi thường xuyên
+- **Các chức năng mua sắm chính:** Tìm kiếm và lọc sản phẩm, xem chi tiết sản phẩm, thêm vào giỏ hàng, áp mã giảm giá/voucher, thanh toán đa phương thức (COD, ví ShopeePay, thẻ ngân hàng), theo dõi đơn hàng
 - **Khu vực đã khảo sát:** Trang chủ, Danh mục sản phẩm, Chi tiết sản phẩm, Tìm kiếm, Giỏ hàng
 
 ### Bảng khảo sát – 5 khu vực Shopee.vn
