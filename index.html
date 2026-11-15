@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopee – Cải Tiến Thẻ Sản Phẩm | E-commerce UI Improvement</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="header">
+    <a class="logo" href="#">shopee</a>
+    <div class="search-bar">
+      <input type="text" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm" />
+      <button aria-label="Tìm kiếm">🔍</button>
+    </div>
+  </header>
+
+  <!-- ======= MAIN CONTENT ======= -->
+  <main class="container">
+
+    <!-- Improvement explanation banner -->
+    <div class="improvement-banner">
+      <strong>🛠 Cải tiến đã thực hiện – Thẻ sản phẩm (Product Card)</strong>
+      <strong>Vấn đề gốc:</strong> Shopee.vn hiển thị giá bán và số lượng đã bán trên thẻ sản phẩm, nhưng phần trăm giảm giá (<em>%</em>) không xuất hiện rõ ràng ở chế độ desktop — người dùng phải tự tính nhẩm. Trên màn hình điện thoại, giá gốc và giá giảm đôi khi bị cắt bớt do không gian hẹp.<br/>
+      <strong>Cải tiến:</strong> (1) Badge "−XX%" nổi bật góc trên trái ảnh sản phẩm. (2) Hàng giá gốc gạch ngang + tag giảm giá inline luôn hiện đủ. (3) Responsive 2 cột trên mobile không làm mất thông tin giá.
+    </div>
+
+    <!-- ===== BEFORE section ===== -->
+    <section class="comparison-section">
+      <h2 class="section-title">
+        Trước cải tiến
+        <span>Cách hiển thị hiện tại trên Shopee</span>
+      </h2>
+      <div class="before-after-label label-before">BEFORE</div>
+
+      <div class="product-grid">
+
+        <!-- Old card 1 -->
+        <div class="product-card-old">
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/FFE0E0/EE4D2D?text=Áo+Thun" alt="Áo thun nam" />
+          </div>
+          <div class="product-info">
+            <p class="product-name-old">Áo Thun Nam Tay Ngắn Cotton Cao Cấp Nhiều Màu</p>
+            <span class="price-old-only">₫129.000</span>
+            <p class="sold-old">Đã bán 2.3k</p>
+          </div>
+        </div>
+
+        <!-- Old card 2 -->
+        <div class="product-card-old">
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/E0F0FF/2D7EEE?text=Giày+Thể+Thao" alt="Giày thể thao" />
+          </div>
+          <div class="product-info">
+            <p class="product-name-old">Giày Thể Thao Nam Nữ Đế Mềm Phong Cách Hàn Quốc 2025</p>
+            <span class="price-old-only">₫259.000</span>
+            <p class="sold-old">Đã bán 5.1k</p>
+          </div>
+        </div>
+
+        <!-- Old card 3 -->
+        <div class="product-card-old">
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/E8FFE0/2DAA50?text=Tai+Nghe" alt="Tai nghe" />
+          </div>
+          <div class="product-info">
+            <p class="product-name-old">Tai Nghe Bluetooth Không Dây TWS Chống Ồn</p>
+            <span class="price-old-only">₫189.000</span>
+            <p class="sold-old">Đã bán 8.7k</p>
+          </div>
+        </div>
+
+        <!-- Old card 4 -->
+        <div class="product-card-old">
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/FFF5E0/EE8D2D?text=Túi+Xách" alt="Túi xách" />
+          </div>
+          <div class="product-info">
+            <p class="product-name-old">Túi Xách Nữ Da PU Cao Cấp Phong Cách Thời Trang</p>
+            <span class="price-old-only">₫349.000</span>
+            <p class="sold-old">Đã bán 1.2k</p>
+          </div>
+        </div>
+
+        <!-- Old card 5 -->
+        <div class="product-card-old">
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/F0E0FF/9B2DEE?text=Kem+Chống+Nắng" alt="Kem chống nắng" />
+          </div>
+          <div class="product-info">
+            <p class="product-name-old">Kem Chống Nắng SPF50+ PA++++ Không Nhờn Rít</p>
+            <span class="price-old-only">₫95.000</span>
+            <p class="sold-old">Đã bán 15k</p>
+          </div>
+        </div>
+
+      </div><!-- end product-grid before -->
+    </section>
+
+    <!-- ===== AFTER section ===== -->
+    <section class="comparison-section">
+      <h2 class="section-title">
+        Sau cải tiến
+        <span>Hiển thị giá gốc + % giảm rõ ràng, responsive trên mobile</span>
+      </h2>
+      <div class="before-after-label label-after">AFTER</div>
+
+      <div class="product-grid">
+
+        <!-- Improved card 1 -->
+        <div class="product-card">
+          <span class="discount-badge">−35%</span>
+          <span class="mall-badge">MALL</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/FFE0E0/EE4D2D?text=Áo+Thun" alt="Áo thun nam" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Áo Thun Nam Tay Ngắn Cotton Cao Cấp Nhiều Màu Size S-XXL</p>
+            <div class="price-section">
+              <span class="price-sale">₫129.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫199.000</span>
+                <span class="discount-tag-inline">−35%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★☆ 4.8</span>
+              <span>Đã bán 2.3k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Improved card 2 -->
+        <div class="product-card">
+          <span class="discount-badge">−48%</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/E0F0FF/2D7EEE?text=Giày+Thể+Thao" alt="Giày thể thao" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Giày Thể Thao Nam Nữ Đế Mềm Phong Cách Hàn Quốc 2025</p>
+            <div class="price-section">
+              <span class="price-sale">₫259.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫499.000</span>
+                <span class="discount-tag-inline">−48%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★★ 4.9</span>
+              <span>Đã bán 5.1k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Improved card 3 -->
+        <div class="product-card">
+          <span class="discount-badge">−53%</span>
+          <span class="mall-badge">MALL</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/E8FFE0/2DAA50?text=Tai+Nghe" alt="Tai nghe" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Tai Nghe Bluetooth Không Dây TWS Chống Ồn ANC Pro</p>
+            <div class="price-section">
+              <span class="price-sale">₫189.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫399.000</span>
+                <span class="discount-tag-inline">−53%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★☆ 4.7</span>
+              <span>Đã bán 8.7k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Improved card 4 -->
+        <div class="product-card">
+          <span class="discount-badge">−30%</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/FFF5E0/EE8D2D?text=Túi+Xách" alt="Túi xách" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Túi Xách Nữ Da PU Cao Cấp Phong Cách Thời Trang Hàng Hiệu</p>
+            <div class="price-section">
+              <span class="price-sale">₫349.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫499.000</span>
+                <span class="discount-tag-inline">−30%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★☆ 4.6</span>
+              <span>Đã bán 1.2k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Improved card 5 -->
+        <div class="product-card">
+          <span class="discount-badge">−37%</span>
+          <span class="mall-badge">MALL</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/F0E0FF/9B2DEE?text=Kem+Chống+Nắng" alt="Kem chống nắng" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Kem Chống Nắng SPF50+ PA++++ Không Nhờn Rít Cho Da Nhạy Cảm</p>
+            <div class="price-section">
+              <span class="price-sale">₫95.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫150.000</span>
+                <span class="discount-tag-inline">−37%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★★ 5.0</span>
+              <span>Đã bán 15k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+        <!-- Improved card 6 (bonus) -->
+        <div class="product-card">
+          <span class="discount-badge">−20%</span>
+          <div class="product-img-wrapper">
+            <img src="https://placehold.co/300x300/E0FFF5/2DEEAA?text=Bình+Nước" alt="Bình nước" />
+          </div>
+          <div class="product-info">
+            <p class="product-name">Bình Nước Giữ Nhiệt Inox 500ml Chống Thấm Nước</p>
+            <div class="price-section">
+              <span class="price-sale">₫79.000</span>
+              <div class="price-original-row">
+                <span class="price-original">₫99.000</span>
+                <span class="discount-tag-inline">−20%</span>
+              </div>
+            </div>
+            <div class="product-stats">
+              <span class="rating">★★★★☆ 4.5</span>
+              <span>Đã bán 3.4k</span>
+            </div>
+            <span class="free-ship">🚚 Miễn phí vận chuyển</span>
+            <button class="btn-cart" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ</button>
+          </div>
+        </div>
+
+      </div><!-- end product-grid after -->
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <p>Bài tập cá nhân – Phát triển ứng dụng WEB/TMĐT – Chương 1</p>
+    <p style="margin-top:4px;">Website tham khảo: <a href="https://shopee.vn" target="_blank" rel="noopener">shopee.vn</a> · Công nghệ: HTML5 + CSS3</p>
+  </footer>
+
+</body>
+</html>
